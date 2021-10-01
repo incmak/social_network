@@ -1,79 +1,142 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
-<html>
-<head>
-	<title>SignIn</title>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="jquery.js"></script>
-</head>
-<style>
-	body{
-		overflow-x: hidden;
-	}
-	.main-content {
-	  width: 50%;
-	  height: 40%;
-	  margin: 10px auto;
-	  background-color: #fff;
-	  border: 2px solid #e6e6e6;
-	  padding: 40px 50px;
-	}
-	.header {
-	  border: 0px solid #000;
-	  margin-bottom: 5px;
-	}
-	.well{
-		background-color: #187FAB;
-	}
-	#signin{
-		width: 60%;
-		border-radius: 30px;
-	}
-	.overlap-text {
-	  position: relative;
-	}
+<html lang="zxx">
+<!-- Head -->
 
-	.overlap-text a {
-	  position: absolute;
-	  top: 8px;
-	  right: 10px;
-	  font-size: 14px;
-	  text-decoration: none;
-	  font-family: 'Overpass Mono', monospace;
-	  letter-spacing: -1px;
-	}
-</style>
+<head>
+    <title>Signin</title>
+    <!-- Meta-Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Key Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta-Tags -->
+    <!-- Index-Page-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <!-- //Custom-Stylesheet-Links -->
+    <!--fonts -->
+    <!-- //fonts -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+    <!-- //Font-Awesome-File-Links -->
+	
+	<!-- Google fonts -->
+	<link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
+	<!-- Google fonts -->
+
+</head>
+<!-- //Head -->
+<!-- Body -->
+
 <body>
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="well">
-				<center><h1 style="color: white;"><strong>Colleger</strong></h1></center>
+
+<section class="main">
+	<div class="layer">
+		
+		<div class="bottom-grid">
+			<div class="logo">
+				<h1> <a href="index.html"><span class="fa fa-key"></span> Colleger</a></h1>
+			</div>
+			<div class="links">
+				<ul class="links-unordered-list">
+					<li class="active">
+						<a href="#" class="">Login</a>
+					</li>
+					<li class="">
+						<a href="#" class="">About Us</a>
+					</li>
+					<li class="">
+						<a href="#" class="">Register</a>
+					</li>
+					<li class="">
+						<a href="#" class="">Contact</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="main-content">
-		        <div class="header">
-		          <h3 style="text-align: center;"><strong>Login to Colleger</strong></h3><hr>
-		        </div>
-		        <div class="l-part">
-		          <form  action="" method="post">
-		          	<input type="email" placeholder="Email" name="email" required class="form-control input-md" /><br>
-		          	<div class="overlap-text">
-			            <input type="password" placeholder="Password" name="pass" required class="form-control input-md" /><br>
-			            <a style="text-decoration:none; color:#187FAB;" data-toggle="tooltip" title="Reset Password"  href="forgot_password.php">Forgot?</a>
-		       		</div>
-		       		<a style="text-decoration:none;float: right; color:#187FAB;" data-toggle="tooltip" title="Create Account!" href="signup.php">Don't have an account?</a><br><br>
-		            <center><button id="signin" class="btn btn-info btn-lg" name="login">Login</button></center>
-		            <?php include("login.php"); ?>
-		          </form>
-		        </div>
-	      </div>
+		<div class="content-w3ls">
+			<div class="text-center icon">
+				<span class="fa "><img src="images/logo.png" height="100px" width="100px" alt="colleger"></span>
+			</div>
+			<div class="content-bottom">
+				<form action="login.php" method="post">
+					<div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input id="text1" type="text" value="" name="email" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="field-group">
+						<span class="fa fa-lock" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="pass" id="myInput" type="Password" placeholder="Password">
+						</div>
+					</div>
+					<div class="wthree-field">
+						<button type="submit" name="login" id="signin" class="btn">Login</button>
+					</div>
+					<ul class="list-login">
+						<li class="switch-agileits">
+							<label class="switch">
+								<input type="checkbox">
+								<span class="slider round"></span>
+								keep Logged in
+							</label>
+						</li>
+						<li>
+							<a href="#" class="text-right">forgot password?</a>
+						</li>
+						<li class="clearfix"></li>
+					</ul>
+					<ul class="list-login-bottom">
+						<li class="">
+							<a href="signup.php" class="">Create Account</a>
+						</li>
+						<li class="">
+							<a href="#" class="text-right">Need Help?</a>
+						</li>
+						<li class="clearfix"></li>
+					</ul>
+					<?php include("login.php"); ?>
+				</form>
+			</div>
 		</div>
-	</div>
+		<div class="bottom-grid1">
+			<div class="links">
+				<ul class="links-unordered-list">
+					<li class="">
+						<a href="#" class="">About Us</a>
+					</li>
+					<li class="">
+						<a href="#" class="">Privacy Policy</a>
+					</li>
+					<li class="">
+						<a href="#" class="">Terms of Use</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<p>© 2019 Key. All rights reserved | Design by
+					<a href="http://w3layouts.com">W3layouts</a>
+				</p>
+			</div>
+		</div>
+    </div>
+</section>
+
 </body>
+<!-- //Body -->
 </html>
