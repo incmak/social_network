@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 30, 2021 at 06:46 PM
+-- Generation Time: Oct 01, 2021 at 11:48 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.2.34
 
@@ -94,6 +94,7 @@ CREATE TABLE `users` (
   `user_email` varchar(255) NOT NULL,
   `user_country` text NOT NULL,
   `user_gender` text NOT NULL,
+  `user_branch` varchar(20) DEFAULT NULL,
   `user_birthday` text NOT NULL,
   `user_image` varchar(255) NOT NULL,
   `user_cover` varchar(255) NOT NULL,
@@ -107,12 +108,15 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `f_name`, `l_name`, `user_name`, `describe_user`, `Relationship`, `user_pass`, `user_email`, `user_country`, `user_gender`, `user_birthday`, `user_image`, `user_cover`, `user_reg_date`, `status`, `posts`, `recovery_account`) VALUES
-(30, 'Faisal', 'Hassan', 'Faisal Hassan', 'Hi there ! I am using Colleger .', 'Single', '1234567890', 'me@you', 'India', 'Male', '1997-08-23', '17.jpg.12', '6.jpg.11', '2021-09-27 14:57:24', 'verified', 'yes', 'Rasool SAW'),
-(31, 'Waqib', 'Ahmad', 'waqib_ahmad_548571', 'Aati ka Khandala', 'Widowed', 'kukkaarrrrr', 'be@xe', 'India', 'Male', '1998-01-01', '4.jpg.44', '18.jpg.2', '2021-09-27 15:29:04', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
-(32, 'Asif', 'Mushtaq', 'Asif_Mushtaq', 'Hey There ! I am using Colleger', 'Engaged', '1234567890', 'you@you', 'India', 'Male', '1998-01-01', '52.jpg.9', '46.jpg.65', '2021-09-27 17:04:07', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
-(34, 'Syed', 'Irfan Yaqoob', 'Syed Irfan', 'Hello Colleger.This is my default status.', 'Married', 'ideaisbrilliant', 'red@nexon', 'India', 'Male', '1986-01-01', '15.jpg.26', '14.jpg.100', '2021-09-28 18:30:24', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
-(36, 'Syed', 'Wajid', 'syed_wajid_772515', 'Hello Colleger.This is my default status.', '........', '1234567890', 'syed@wajid', 'India', 'Male', '1987-01-01', '20.jpg.9', '1.jpg.24', '2021-09-30 09:53:08', 'verified', 'yes', 'Rasool SAW');
+INSERT INTO `users` (`user_id`, `f_name`, `l_name`, `user_name`, `describe_user`, `Relationship`, `user_pass`, `user_email`, `user_country`, `user_gender`, `user_branch`, `user_birthday`, `user_image`, `user_cover`, `user_reg_date`, `status`, `posts`, `recovery_account`) VALUES
+(30, 'Faisal', 'Hassan', 'Faisal Hassan', 'Hi there ! I am using Colleger .', 'Single', '1234567890', 'me@you', 'India', 'Male', NULL, '1997-08-23', '17.jpg.12', '6.jpg.11', '2021-09-27 14:57:24', 'verified', 'yes', 'Rasool SAW'),
+(31, 'Waqib', 'Ahmad', 'waqib_ahmad_548571', 'Aati ka Khandala', 'Widowed', 'kukkaarrrrr', 'be@xe', 'India', 'Male', NULL, '1998-01-01', '4.jpg.44', '18.jpg.2', '2021-09-27 15:29:04', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(32, 'Asif', 'Mushtaq', 'Asif_Mushtaq', 'Hey There ! I am using Colleger', 'Engaged', '1234567890', 'you@you', 'India', 'Male', NULL, '1998-01-01', '52.jpg.9', '46.jpg.65', '2021-09-27 17:04:07', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(34, 'Syed', 'Irfan Yaqoob', 'Syed Irfan', 'Hello Colleger.This is my default status.', 'Married', 'ideaisbrilliant', 'red@nexon', 'India', 'Male', NULL, '1986-01-01', '15.jpg.26', '14.jpg.100', '2021-09-28 18:30:24', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(36, 'Syed', 'Wajid', 'syed_wajid_772515', 'Hello Colleger.This is my default status.', '........', '1234567890', 'syed@wajid', 'India', 'Male', NULL, '1987-01-01', '20.jpg.9', '1.jpg.24', '2021-09-30 09:53:08', 'verified', 'yes', 'Rasool SAW'),
+(37, 'Muieen', 'Ahmad', 'muieen_ahmad_339979', 'Hello Colleger.This is my default status.', '........', '1234567890', 'muieen@ahmad', 'India', 'Prefer Not To Say', NULL, '1997-08-10', 'def_3.jpg', 'default_cover.jpg', '2021-10-01 09:09:50', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(38, 'abc', 'zdrgz', 'abc_zdrgz_474193', 'Hello Colleger.This is my default status.', '........', '1234567890', 'nn@nn', 'India', 'Male', 'Computer Science', '1111-11-11', 'def_1.png', 'default_cover.jpg', '2021-10-01 09:26:40', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(39, 'def', 'dfa', 'def_dfa_662219', 'Hello Colleger.This is my default status.', '........', '1234567890', 'def@yo', 'India', 'Male', 'Electronics and Comm', '2888-11-11', 'def_3.jpg', 'default_cover.jpg', '2021-10-01 09:29:30', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888');
 
 -- --------------------------------------------------------
 
@@ -200,7 +204,7 @@ ALTER TABLE `posts`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `user_messages`
