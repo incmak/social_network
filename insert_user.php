@@ -8,6 +8,7 @@ include("includes/connection.php");
 	$last_name = htmlentities(mysqli_real_escape_string($con,$_POST['last_name']));
 	$pass = htmlentities(mysqli_real_escape_string($con,$_POST['u_pass']));
 	$email = htmlentities(mysqli_real_escape_string($con,$_POST['u_email']));
+	$branch = htmlentities(mysqli_real_escape_string($con,$_POST['u_branch']));
 	$country = htmlentities(mysqli_real_escape_string($con,$_POST['u_country']));
 	$gender = htmlentities(mysqli_real_escape_string($con,$_POST['u_gender']));
 	$birthday = htmlentities(mysqli_real_escape_string($con,$_POST['u_birthday']));
@@ -47,7 +48,7 @@ include("includes/connection.php");
 		else if($rand == 3)
 			$profile_pic = "def_3.jpg";
 
-	$insert = "insert into users (f_name,l_name,user_name,describe_user,Relationship,user_pass,user_email,user_country,user_gender,user_birthday,user_image,user_cover,user_reg_date,status,posts,recovery_account) values ('$first_name','$last_name','$username','Hello Colleger.This is my default status.','........','$pass','$email','$country','$gender','$birthday','$profile_pic','default_cover.jpg',NOW(),'$status','$posts','ifyouaregootatsomethingdontdoitforfree45566677888')";
+	$insert = "insert into users (f_name,l_name,user_name,describe_user,Relationship,user_pass,user_email,user_country,user_gender,user_branch,user_birthday,user_image,user_cover,user_reg_date,status,posts,recovery_account) values ('$first_name','$last_name','$username','Hello Colleger.This is my default status.','........','$pass','$email','$country','$gender','$branch','$birthday','$profile_pic','default_cover.jpg',NOW(),'$status','$posts','ifyouaregootatsomethingdontdoitforfree45566677888')";
 
 	$query = mysqli_query($con,$insert);
 

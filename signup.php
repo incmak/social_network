@@ -126,9 +126,19 @@
 							<option disabled="disabled">Select Your Gender</option>
 							<option>Male</option>
 							<option>Female</option>
-							<option>Tik Tok</option>
 							<option>Prefer Not To Say</option>
 							<option>Others</option>
+						</select>
+					</div><br>
+					<div class="input-group">
+					    <span class="input-group-addon"><i class="glyphicon glyphicon-chevron-down"></i></span>
+						<select class="form-control input-md" name="u_branch" required="required">
+							<option disabled="disabled">Select Your Branch</option>
+							<option>Computer Science</option>
+							<option>Electronics and Communication</option>
+							<option>Mechanical</option>
+							<option>Electrical</option>
+							<option>Civil</option>
 						</select>
 					</div><br>
 					<div class="input-group">

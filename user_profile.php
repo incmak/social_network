@@ -83,6 +83,7 @@ else{ ?>
 				$name = $row['user_name'];
 				$f_name = $row['f_name'];
 				$l_name = $row['l_name'];
+				$branch = $row['user_branch'];
 				$describe_user = $row['describe_user'];
 				$country = $row['user_country'];
 				$gender = $row['user_gender'];
@@ -101,6 +102,7 @@ else{ ?>
 					  <li class='list-group-item' title='Username'><strong>$f_name $l_name</strong></li>
 					  <li class='list-group-item' title='User Status'><strong style='color:grey;'>$describe_user</strong></li>
 					  <li class='list-group-item' title='Gender'>$gender</li>
+					  <li class='list-group-item' title='Branch'>$branch</li>
 					  <li class='list-group-item' title='Country'>$user_country</li>
 					  <li class='list-group-item' title='User Registration Date'>$register_date</li>
 					</ul>

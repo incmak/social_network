@@ -24,7 +24,7 @@ else{ ?>
 <body>
 <div class="row">
 	<div class="col-sm-12">
-		<center><h2>See Your reslts here!</h2></center><br><br>
+		<center><h2>See Your results here!</h2></center><br><br>
 		<?php results();?>
 	</div>
 </div>
