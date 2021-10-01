@@ -13,7 +13,7 @@ if(!isset($_SESSION['user_email'])){
 else{ ?>
 <html>
 <head>
-	<title>Welcomme to Home</title>
+	<title>Edit Profile</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
