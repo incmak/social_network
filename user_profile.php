@@ -98,6 +98,8 @@ else{ ?>
 					<h2>Information about</h2>
 					<img class='img-circle' src='users/$image' width='150' height='150' />
 					<br><br>
+					<a href='messages.php?u_id=$u_id'><button class='btn btn-primary'>Message</button></a>
+					<br>
 					<ul class='list-group'>
 					  <li class='list-group-item' title='Username'><strong>$f_name $l_name</strong></li>
 					  <li class='list-group-item' title='User Status'><strong style='color:grey;'>$describe_user</strong></li>

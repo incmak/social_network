@@ -69,7 +69,7 @@
 				<img src="images/43.jpg" class="img-rounded" title="Colleger" width="650px" height="565px">
 				<div id="centered1" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-search"></span>&nbsp&nbsp<strong>Follow Your Interests.</strong></h3></div>
 				<div id="centered2" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp<strong>Hear what people are talking about.</strong></h3></div>
-				<div id="centered3" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp<strong>Join the conversation.</strong></h3></div>
+				<div id="centered3" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp<strong><a href="mailto:faisalhassan199@gmail.com">Join the conversation.</a></strong></h3></div>
 			</div>
 			<div class="col-sm-6" style="left: 8%;">
 				
