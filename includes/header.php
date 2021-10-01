@@ -34,6 +34,7 @@ include("functions/functions.php");
 			$user_email = $row['user_email'];
 			$user_country = $row['user_country'];
 			$user_gender = $row['user_gender'];
+			$user_branch = $row['user_branch'];
 			$user_birthday = $row['user_birthday'];
 			$user_image = $row['user_image'];
 			$user_cover = $row['user_cover'];

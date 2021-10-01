@@ -182,6 +182,7 @@ else{ ?>
         <p><strong>Lives In: </strong> $user_country</p><br>
         <p><strong>Member Since: </strong> $register_date</p><br>
         <p><strong>Gender: </strong>  $user_gender</p><br>
+		<p><strong>Branch: </strong>  $user_branch</p><br>
         <p><strong>Date Of Birth: </strong>  $user_birthday</p><br>
         ";
         ?>
