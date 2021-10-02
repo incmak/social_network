@@ -77,8 +77,8 @@ else{ ?>
 
 			$row_user=mysqli_fetch_array($run_user);
 
-			$user_to_msg = $row_user['user_id'];
-			$user_to_name = $row_user['user_name'];
+			$user_to_msg = $row_user['user_id']?? null;
+			$user_to_name = $row_user['user_name']?? null;
 			}
 
 			$user = $_SESSION['user_email'];
@@ -195,15 +195,15 @@ else{ ?>
 			$run_user = mysqli_query($con,$get_user);
 			$row=mysqli_fetch_array($run_user);
 
-			$user_id = $row['user_id'];
-			$user_name = $row['user_name'];
-			$f_name = $row['f_name'];
-			$l_name = $row['l_name'];
-			$describe_user = $row['describe_user'];
-			$user_country = $row['user_country'];
-			$user_image = $row['user_image'];
-			$register_date = $row['user_reg_date'];
-			$gender = $row['user_gender'];
+			$user_id = $row['user_id']?? null;
+			$user_name = $row['user_name']?? null;
+			$f_name = $row['f_name']?? null;
+			$l_name = $row['l_name']?? null;
+			$describe_user = $row['describe_user']?? null;
+			$user_country = $row['user_country']?? null;
+			$user_image = $row['user_image']?? null;
+			$register_date = $row['user_reg_date']?? null;
+			$gender = $row['user_gender']?? null;
 			}
 
 			if($get_id == "new"){
