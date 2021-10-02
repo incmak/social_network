@@ -155,7 +155,7 @@ else{ ?>
 				<form>
 					<center><h3>Select Someone to start conversation with</h3></center>
 					<textarea disabled class="form-control" placeholder="Enter Your Message" id="message_textarea"></textarea>
-					<input class="btn btn-default" disabled type="submit" name="send_msg" id="btn-msg" value="Send">
+					<input class="btn btn-default" disabled type="submit" name="send_msg" id="btn-msg" value="Send" onClick="window.location.href=window.location.href">
 				</form><br><br>
 
 				';
@@ -164,7 +164,7 @@ else{ ?>
 				echo'
 				<form action="" method="POST">
 					<textarea class="form-control" placeholder="Enter Your Message" name="msg_box" id="message_textarea"></textarea>
-					<input type="submit" name="send_msg" id="btn-msg" value="Send">
+					<input type="submit" name="send_msg" id="btn-msg" value="Send" onClick="document.write("brow")">
 				</form><br><br>
 				';
 				}
