@@ -13,6 +13,11 @@ if(!isset($_SESSION['user_email'])){
 else{ ?>
 <html>
 <head>
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
 	<title>Conversations/Discussion</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
