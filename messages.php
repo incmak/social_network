@@ -15,25 +15,14 @@ else{ ?>
 <head>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script>
-$('#btn-msg').click(function() {
-    location.reload();
-});
-</script>
+
 
 <script>
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
     }
 </script>
-<script> 
-$(document).ready(function(){
-setInterval(function(){
-      $("#loaded_msg").load(window.location.href + " #loaded_msg" );
-}, 3000);
-});
 
-</script>
 	<title>Conversations/Discussion</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -262,11 +251,6 @@ setInterval(function(){
 	var div = document.getElementById("scroll_messages");
 	div.scrollTop = div.scrollHeight;
 </script>
-<script>
-	function refreshDiv() {
-		$('loaded_msg').load(location.href + " #loaded_msg")
-	}
-	</script>
 </body>
 </html>
 <?php } ?>
