@@ -13,10 +13,26 @@ if(!isset($_SESSION['user_email'])){
 else{ ?>
 <html>
 <head>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+$('#btn-msg').click(function() {
+    location.reload();
+});
+</script>
+
 <script>
     if ( window.history.replaceState ) {
         window.history.replaceState( null, null, window.location.href );
     }
+</script>
+<script> 
+$(document).ready(function(){
+setInterval(function(){
+      $("#loaded_msg").load(window.location.href + " #loaded_msg" );
+}, 3000);
+});
+
 </script>
 	<title>Conversations/Discussion</title>
 	<meta charset="utf-8">
@@ -135,6 +151,7 @@ else{ ?>
 				$msg_body = $row_msg['msg_body'];
 				$msg_date = $row_msg['date'];
 				?>
+				
 
 				<div id="loaded_msg">
 					<p><?php if($user_to == $user_to_msg AND $user_from == $user_from_msg){echo "<div class='message' id='blue' data-toggle='tooltip' title='$msg_date'>$msg_body</div><br><br><br>";} else if($user_from == $user_to_msg AND $user_to==$user_from_msg){echo "<div class='message' id='green' data-toggle='tooltip' title='$msg_date'>$msg_body</div><br><br><br>";}?></p>
@@ -146,6 +163,7 @@ else{ ?>
 
 			?>
 		</div>
+		
 		<?php
 			if(isset($_GET['u_id'])){
 				$u_id = $_GET['u_id'];
@@ -155,7 +173,7 @@ else{ ?>
 				<form>
 					<center><h3>Select Someone to start conversation with</h3></center>
 					<textarea disabled class="form-control" placeholder="Enter Your Message" id="message_textarea"></textarea>
-					<input class="btn btn-default" disabled type="submit" name="send_msg" id="btn-msg" value="Send" onClick="window.location.href=window.location.href">
+					<input class="btn btn-default" disabled type="submit" name="send_msg" id="btn-msg" value="Send">
 				</form><br><br>
 
 				';
@@ -164,7 +182,7 @@ else{ ?>
 				echo'
 				<form action="" method="POST">
 					<textarea class="form-control" placeholder="Enter Your Message" name="msg_box" id="message_textarea"></textarea>
-					<input type="submit" name="send_msg" id="btn-msg" value="Send" onClick="document.write("brow")">
+					<input type="submit" name="send_msg" id="btn-msg" value="Send" >
 				</form><br><br>
 				';
 				}
@@ -244,6 +262,11 @@ else{ ?>
 	var div = document.getElementById("scroll_messages");
 	div.scrollTop = div.scrollHeight;
 </script>
+<script>
+	function refreshDiv() {
+		$('loaded_msg').load(location.href + " #loaded_msg")
+	}
+	</script>
 </body>
 </html>
 <?php } ?>
