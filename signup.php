@@ -59,7 +59,7 @@
 						<a href="#" class="">About Us</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Register</a>
+						<a href="#" class="">signup</a>
 					</li>
 					<li class="">
 						<a href="#" class="">Contact</a>
