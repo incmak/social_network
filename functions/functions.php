@@ -836,7 +836,6 @@ $con = mysqli_connect("localhost","root","","social_network") or die("Connection
 		$row=mysqli_fetch_array($run_user);
 		$user_branch = $row['user_branch'];
 	
-
 		$per_page=4;
 
 		if (isset($_GET['page'])) {
@@ -847,7 +846,7 @@ $con = mysqli_connect("localhost","root","","social_network") or die("Connection
 		}
 		$start_from = ($page-1) * $per_page;
 	
-		$get_posts = "select * from posts where user_branch = 'Computer Science' ORDER by 1 DESC LIMIT $start_from, $per_page";
+		$get_posts = "select * from posts where user_branch = '$user_branch' ORDER by 1 DESC LIMIT $start_from, $per_page";
 	
 		$run_posts = mysqli_query($con,$get_posts);
 	

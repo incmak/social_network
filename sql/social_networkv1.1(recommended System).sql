@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2021 at 11:31 AM
+-- Generation Time: Oct 09, 2021 at 04:33 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -59,6 +59,7 @@ CREATE TABLE `posts` (
   `post_id` int(11) NOT NULL,
   `user_id` int(11) NOT NULL,
   `topic_id` int(11) NOT NULL,
+  `user_branch` varchar(30) DEFAULT NULL,
   `post_content` varchar(255) NOT NULL,
   `upload_image` varchar(255) NOT NULL,
   `post_date` timestamp NOT NULL DEFAULT current_timestamp()
@@ -68,19 +69,25 @@ CREATE TABLE `posts` (
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`post_id`, `user_id`, `topic_id`, `post_content`, `upload_image`, `post_date`) VALUES
-(25, 30, 0, 'Alhamdulillah ....', '1.jpg.22', '2021-09-27 15:24:25'),
-(26, 30, 0, 'All is working very well !!!', '', '2021-09-27 15:27:25'),
-(30, 32, 0, 'Its better to be feared than to be loved', '37.jpg.38', '2021-09-27 17:43:06'),
-(33, 30, 0, 'How about Making Bitcoin \r\na Universal\r\nDollar', '', '2021-09-29 14:25:24'),
-(35, 30, 0, 'Robotic Process Automation is the ...        \r\nnext  \r\nBIG THING', '', '2021-09-30 06:59:14'),
-(37, 34, 0, ' One machine can do the work of fifty ordinary men. \r\n No machine can do the work of one extraordinary man.', '', '2021-09-30 07:11:15'),
-(38, 36, 0, 'TEch is Useful when it brings people together', '32.jpg.97', '2021-09-30 10:00:33'),
-(39, 30, 0, 'hello is in my mind', '8.jpg.24', '2021-10-02 07:39:53'),
-(40, 30, 0, 'hello is in my mind', '8.jpg.47', '2021-10-02 07:41:28'),
-(41, 30, 0, 'test the error', '', '2021-10-02 07:54:03'),
-(42, 30, 0, 'error in images', '1.jpg.15', '2021-10-02 07:54:38'),
-(43, 30, 0, 'retry images', '1.jpg.6', '2021-10-02 07:56:08');
+INSERT INTO `posts` (`post_id`, `user_id`, `topic_id`, `user_branch`, `post_content`, `upload_image`, `post_date`) VALUES
+(25, 30, 0, NULL, 'Alhamdulillah ....', '1.jpg.22', '2021-09-27 15:24:25'),
+(26, 30, 0, NULL, 'All is working very well !!!', '', '2021-09-27 15:27:25'),
+(30, 32, 0, NULL, 'Its better to be feared than to be loved', '37.jpg.38', '2021-09-27 17:43:06'),
+(33, 30, 0, NULL, 'How about Making Bitcoin \r\na Universal\r\nDollar', '', '2021-09-29 14:25:24'),
+(37, 34, 0, NULL, ' One machine can do the work of fifty ordinary men. \r\n No machine can do the work of one extraordinary man.', '', '2021-09-30 07:11:15'),
+(38, 36, 0, NULL, 'TEch is Useful when it brings people together', '32.jpg.97', '2021-09-30 10:00:33'),
+(40, 30, 0, NULL, 'hello is in my mind', '8.jpg.47', '2021-10-02 07:41:28'),
+(53, 30, 0, 'Computer Science', 'userbranching w/o images\r\n', '', '2021-10-09 14:04:42'),
+(54, 30, 0, 'Computer Science', 'user branching with images', '', '2021-10-09 14:05:08'),
+(56, 30, 0, 'Computer Science', 'test the branching', '', '2021-10-09 14:10:02'),
+(57, 30, 0, 'Computer Science', 'one', '', '2021-10-09 14:18:05'),
+(58, 30, 0, 'Computer Science', 'one', '', '2021-10-09 14:18:05'),
+(59, 30, 0, 'Computer Science', 'Two', '', '2021-10-09 14:18:11'),
+(60, 30, 0, 'Computer Science', 'three', '', '2021-10-09 14:18:19'),
+(61, 37, 0, 'Civil', 'civil recommended 1', '', '2021-10-09 14:31:08'),
+(62, 37, 0, 'Civil', 'civil recommended 2', '', '2021-10-09 14:31:18'),
+(63, 38, 0, 'Civil', 'civil by me 000', '', '2021-10-09 14:32:04'),
+(64, 38, 0, 'Civil', 'civil by me 111', '', '2021-10-09 14:32:12');
 
 -- --------------------------------------------------------
 
@@ -119,8 +126,8 @@ INSERT INTO `users` (`user_id`, `f_name`, `l_name`, `user_name`, `describe_user`
 (32, 'Asif', 'Mushtaq', 'Asif_Mushtaq', 'Hey There ! I am using Colleger', 'Engaged', '1234567890', 'you@you', 'India', 'Male', 'Civil', '1998-01-01', 'default.png', 'default.png', '2021-09-27 17:04:07', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
 (34, 'Syed', 'Irfan Yaqoob', 'Syed Irfan', 'Hello Colleger.This is my default status.', 'Married', 'ideaisbrilliant', 'red@nexon', 'India', 'Male', 'Civil', '1986-01-01', 'default.png', 'default.png', '2021-09-28 18:30:24', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
 (36, 'Syed', 'Wajid', 'syed_wajid_772515', 'Hello Colleger.This is my default status.', '........', '1234567890', 'syed@wajid', 'India', 'Male', 'Electrical', '1987-01-01', 'default.png', 'default.png', '2021-09-30 09:53:08', 'verified', 'yes', 'Rasool SAW'),
-(37, 'Muieen', 'Ahmad', 'muieen_ahmad_339979', 'Hello Colleger.This is my default status.', '........', '1234567890', 'muieen@ahmad', 'India', 'Prefer Not To Say', 'Civil', '1997-08-10', 'def_3.jpg', 'default_cover.jpg', '2021-10-01 09:09:50', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
-(38, 'abc', 'zdrgz', 'abc_zdrgz_474193', 'Hello Colleger.This is my default status.', 'Married', '1234567890', 'nn@nn', 'India', 'Male', 'Civil', '1111-11-11', 'def_1.png', 'default_cover.jpg', '2021-10-01 09:26:40', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(37, 'Muieen', 'Ahmad', 'muieen_ahmad_339979', 'Hello Colleger.This is my default status.', '........', '1234567890', 'muieen@ahmad', 'India', 'Prefer Not To Say', 'Civil', '1997-08-10', 'def_3.jpg', 'default_cover.jpg', '2021-10-01 09:09:50', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
+(38, 'abc', 'zdrgz', 'abc_zdrgz_474193', 'Hello Colleger.This is my default status.', 'Married', '1234567890', 'nn@nn', 'India', 'Male', 'Civil', '1111-11-11', 'def_1.png', 'default_cover.jpg', '2021-10-01 09:26:40', 'verified', 'yes', 'ifyouaregootatsomethingdontdoitforfree45566677888'),
 (39, 'def', 'dfa', 'def_dfa_662219', 'Hello Colleger.This is my default status.', '........', '1234567890', 'def@yo', 'India', 'Male', 'Electronics And Comm', '2888-11-11', 'def_3.jpg', 'default_cover.jpg', '2021-10-01 09:29:30', 'verified', 'no', 'ifyouaregootatsomethingdontdoitforfree45566677888');
 
 -- --------------------------------------------------------
@@ -192,7 +199,29 @@ INSERT INTO `user_messages` (`id`, `user_to`, `user_from`, `msg_body`, `date`, `
 (126, 39, 30, 'yes', '2021-10-02 09:16:56', 'no'),
 (127, 39, 30, 'j', '2021-10-02 09:19:03', 'no'),
 (128, 39, 30, 'hihi', '2021-10-02 09:21:55', 'no'),
-(129, 39, 30, 'hihi', '2021-10-02 09:22:00', 'no');
+(129, 39, 30, 'hihi', '2021-10-02 09:22:00', 'no'),
+(130, 31, 30, 'hi\r\n', '2021-10-04 14:24:30', 'no'),
+(131, 31, 30, 'hello\r\n', '2021-10-04 14:24:41', 'no'),
+(132, 31, 30, 'boi\r\n', '2021-10-04 14:24:58', 'no'),
+(133, 31, 30, 'jig\r\n', '2021-10-04 14:27:17', 'no'),
+(134, 31, 30, 'lol\r\n', '2021-10-04 14:27:25', 'no'),
+(135, 31, 30, 'yeah right\r\n', '2021-10-04 14:28:37', 'no'),
+(136, 31, 30, '1', '2021-10-04 14:34:52', 'no'),
+(137, 31, 30, '2', '2021-10-04 14:38:20', 'no'),
+(138, 31, 30, '3', '2021-10-04 14:38:41', 'no'),
+(139, 31, 30, 'df', '2021-10-04 14:39:37', 'no'),
+(140, 31, 30, 'a', '2021-10-04 14:39:40', 'no'),
+(141, 31, 30, '1', '2021-10-04 14:43:25', 'no'),
+(142, 31, 30, '2', '2021-10-04 14:49:12', 'no'),
+(143, 31, 30, '3', '2021-10-04 14:49:50', 'no'),
+(144, 31, 30, '4', '2021-10-04 14:50:39', 'no'),
+(145, 31, 30, '5', '2021-10-04 14:57:28', 'no'),
+(146, 31, 30, '0', '2021-10-04 16:14:56', 'no'),
+(147, 39, 30, '1', '2021-10-08 09:15:35', 'no'),
+(148, 39, 30, '1', '2021-10-08 09:15:40', 'no'),
+(149, 39, 30, '1', '2021-10-08 09:15:44', 'no'),
+(150, 39, 30, '1', '2021-10-08 09:15:54', 'no'),
+(151, 39, 30, '2', '2021-10-08 09:17:00', 'no');
 
 --
 -- Indexes for dumped tables
@@ -236,7 +265,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `post_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -248,7 +277,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `user_messages`
 --
 ALTER TABLE `user_messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=130;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

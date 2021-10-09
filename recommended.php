@@ -27,7 +27,7 @@ else{ ?>
 </div>
 <div class="row">
 	<div class="col-sm-12">
-		<center><h2><strong>Recommended for you <?php echo "$user_branch";?> </strong></h2><br></center>
+		<center><h2><strong>Recommended for you  </strong></h2><br></center>
 		<?php get_recom_posts();?>
 	</div>
 </div>
