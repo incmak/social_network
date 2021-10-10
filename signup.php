@@ -66,7 +66,7 @@
 				<span class=""></span>
 			</div>
 			<div class="content-bottom">
-				<form action="#" method="post">
+				<form action="" method="post">
 					<div class="field-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
 						<div class="wthree-field">
@@ -186,7 +186,7 @@
 					</div><br>
 
 					<div class="wthree-field">
-						<button type="submit" class="btn">Sign Up</button>
+						<button type="submit" id="signup" name="sign_up" class="btn">Sign Up</button>
 					</div>
 					<ul class="list-login">
 						<li class="switch-agileits">
