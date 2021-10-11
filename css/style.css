@@ -206,6 +206,7 @@ nav.horizontal ul li {
 
 img {
     max-width: 100%;
+    margin-bottom: -2em;
 }
 
 /*--end reset--*/
@@ -250,7 +251,7 @@ body {
 
 .content-w3ls {
     max-width: 500px;
-    margin: 6em auto;
+    margin: -0em auto;
 }
 ul.links-unordered-list li.active a {
     background: rgba(255, 255, 255, 0.05);
@@ -570,7 +571,7 @@ input:checked+.slider:before {
 /* -- Responsive code -- */
 @media screen and (max-width: 1280px) {
     .content-w3ls {
-        margin: 4em auto;
+        margin: 0em auto;
     }
 }
 @media screen and (max-width: 1080px) {
@@ -603,7 +604,7 @@ input:checked+.slider:before {
 @media screen and (max-width: 668px) {
     
     .content-w3ls {
-        margin: 3em auto;
+        margin: 0em auto;
     }
 	ul.links-unordered-list li a,.copyright p {
 		font-size: 15px;
