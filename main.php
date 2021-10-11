@@ -11,6 +11,8 @@
 <style>
 	body{
 		overflow-x: hidden;
+		background: linear-gradient(165deg, rgba(2,0,36,1) 0%, rgba(12,26,65,1) 30%, rgba(0,212,255,1) 100%);
+		font-family: 'Poppins', sans-serif;
 	}
 	#centered1 {
     position: absolute;
@@ -51,31 +53,23 @@
 		border: 2px solid #1da1f2;
 		border-radius: 30px;
 	}
-	.well{
-		background-color: #187FAB;
-	}
+	
 
 </style>
 <body>
 	<div class="row">
 		<div class="col-sm-12">
-			<div class="well">
-				<center><h1 style="color: white;"><strong>Colleger</strong></h1></center>
+			
+				<center><h1 style="color: white;">Colleger</h1></center>
 			</div>
 		</div>
 	</div>
-		<div class="row">
-			<div class="col-sm-6" style="left:0.5%;">
-				<img src="images/43.jpg" class="img-rounded" title="Colleger" width="650px" height="565px">
-				<div id="centered1" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-search"></span>&nbsp&nbsp<strong>Follow Your Interests.</strong></h3></div>
-				<div id="centered2" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp<strong>Hear what people are talking about.</strong></h3></div>
-				<div id="centered3" class="centered"><h3 style="color: white;"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp<strong><a href="mailto:faisalhassan199@gmail.com">Join the conversation.</a></strong></h3></div>
-			</div>
+		
 			<div class="col-sm-6" style="left: 8%;">
 				
-				<img src="images/logo.png" class="img-rounded" title="Colleger" width="80px" height="80px">
-				<h2><strong>See what's happening in <br> the world right now</strong></h2><br><br>
-				<h4><strong>Join Colleger Today</strong></h4>
+				<img src="images/logo.png" class="img-rounded" title="Colleger" width="200px" height="200px">
+				<h2><strong><p style="color:white">Share Your Projects and Proposals<br></p> </strong></h2><br><br>
+				<h4><strong><p style="color:white">Join Colleger Today</p></strong></h4>
 				<form method="post" action="">
 					<button id="signup" class="btn btn-info btn-lg" name="signup">Sign up</button><br><br>
 					<?php
