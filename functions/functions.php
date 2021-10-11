@@ -35,7 +35,7 @@ $con = mysqli_connect("localhost","root","","social_network") or die("Connection
 	              $run = mysqli_query($con,$insert);
 
 					if($run){
-					echo "<script>alert('Your Post Have Been Updated Successfully.')</script>";
+					echo "<script>alert('Your Post  Been Updated Successfully.')</script>";
 					echo"<script>window.open('home.php','_self')</script>";
 
 					$update = "update users set posts='yes' where user_id='$user_id'";
@@ -60,7 +60,7 @@ $con = mysqli_connect("localhost","root","","social_network") or die("Connection
 	              $run = mysqli_query($con,$insert);
 
 					if($run){
-					echo "<script>alert('Your Post Have Been Updated Successfully.')</script>";
+					echo "<script>alert('Your Post Has Been Updated Successfully.')</script>";
 					echo"<script>window.open('home.php','_self')</script>";
 
 					$update = "update users set posts='yes' where user_id='$user_id'";
@@ -77,7 +77,7 @@ $con = mysqli_connect("localhost","root","","social_network") or die("Connection
 			$run = mysqli_query($con,$insert);
 
 				if($run){
-				echo "<script>alert('Your Post Have Been Updated Successfully.')</script>";
+				echo "<script>alert('Your Post Has Been Updated Successfully.')</script>";
 				echo"<script>window.open('home.php','_self')</script>";
 
 				$update = "update users set posts='yes' where user_id='$user_id'";

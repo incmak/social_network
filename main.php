@@ -10,7 +10,7 @@
 </head>
 <style>
 	body{
-		overflow-x: hidden;
+		
 		background: linear-gradient(165deg, rgba(2,0,36,1) 0%, rgba(12,26,65,1) 30%, rgba(0,212,255,1) 100%);
 		font-family: 'Poppins', sans-serif;
 	}
@@ -72,6 +72,7 @@
 				<h4><strong><p style="color:white">Join Colleger Today</p></strong></h4>
 				<form method="post" action="">
 					<button id="signup" class="btn btn-info btn-lg" name="signup">Sign up</button><br><br>
+					
 					<?php
 						if(isset($_POST['signup'])){
 							echo"<script>window.open('signup.php','_self')</script>";

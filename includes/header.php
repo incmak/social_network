@@ -2,23 +2,18 @@
 include("includes/connection.php");
 include("functions/functions.php");
 ?>
-<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-	        <span class="sr-only">Toggle navigation</span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	        <span class="icon-bar"></span>
-	      </button>
-	      <a class="navbar-brand" href="home.php">Colleger</a>
-	    </div>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'><link rel="stylesheet" href="./css/header.css">
 
-	    <!-- Collect the nav links, forms, and other content for toggling -->
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	      	
-	      	<?php 
+</head>
+<body>
+<?php 
 			$user = $_SESSION['user_email'];
 			$get_user = "select * from users where user_email='$user'"; 
 			$run_user = mysqli_query($con,$get_user);
@@ -46,14 +41,31 @@ include("functions/functions.php");
 			$run_posts = mysqli_query($con,$user_posts); 
 			$posts = mysqli_num_rows($run_posts);
 			?>
-
-	        <li><a href='profile.php?<?php echo "u_id=$user_id" ?>'><?php echo "$first_name"; ?></a></li>
-	       	<li><a href="home.php">Home</a></li>
-			<li><a href="members.php">Find People</a></li>
-			<li><a href="recommended.php">Recommended</a></li>
-			<li><a href="messages.php?u_id=new">Messages</a></li>
-
-			<?php
+<!-- partial:index.partial.html -->
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo" href="#">Colleger</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="home.php"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="members.php"><i class="fa fa-search"></i>Find People</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recommended.php"><i class="fa fa-handshake"></i>Recommended</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="messages.php?u_id=new"><i class="fa fa-commenting"></i>Messages</a>
+                </li>
+                <li class="nav-item">
+                <a href='profile.php?<?php echo "u_id=$user_id" ?>'><?php echo "$first_name"; ?></a>
+                </li>
+                <?php
 					
 			echo"
 					
@@ -78,13 +90,25 @@ include("functions/functions.php");
 	      <ul class="nav navbar-nav navbar-right">
 	        <li class="dropdown">
 	          <form class="navbar-form navbar-left" method="get" action="results.php">
-		        <div class="form-group">
-		          <input type="text" class="form-control" name="user_query" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-info" name="search">Search</button>
+		       
+		        
 		      </form>
 	        </li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 </nav>
+            </ul>
+        </div>
+        
+	     
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+</nav>
+    </nav>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script><script  src="./scripts/script.js"></script>
+
+</body>
+</html>
