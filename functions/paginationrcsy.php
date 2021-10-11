@@ -26,7 +26,7 @@
 	echo "
 	<center>
 	<div class='pagination'>
-	<a href='recommonded.php?page=1'>First Page</a>
+	<a href='recommended.php?page=1'>First Page</a>
 	";
 	
 	for ($i=1; $i<=$total_pages; $i++) {
