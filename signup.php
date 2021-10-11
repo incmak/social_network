@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<!-- Head -->
+
 
 <head>
     <title>Sign Up</title>
-    <!-- Meta-Tags -->
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Key Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
@@ -17,23 +17,17 @@
             window.scrollTo(0, 1);
         }
     </script>
-    <!-- //Meta-Tags -->
-    <!-- Index-Page-CSS -->
+    
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <!-- //Custom-Stylesheet-Links -->
-    <!--fonts -->
-    <!-- //fonts -->
+    
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
-    <!-- //Font-Awesome-File-Links -->
-	
-	<!-- Google fonts -->
+    
 	<link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
-	<!-- Google fonts -->
+	
 
 </head>
-<!-- //Head -->
-<!-- Body -->
+
 
 <body>
 
@@ -42,21 +36,21 @@
 		
 		<div class="bottom-grid">
 			<div class="logo">
-				<h1> <a href="index.html"><span class=""></span> Colleger</a></h1>
+			<h1> <a href="index.html"><span class="fa fa-code"></span> Colleger</a></h1>
 			</div>
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="active">
-						<a href="#" class="">Login</a>
+						<a href="signin.php" class="">Login</a>
 					</li>
 					<li class="">
-						<a href="#" class="">About Us</a>
+						<a href="mailto:faisalhassan199@gmail.com" class="">About Us</a>
 					</li>
 					<li class="">
-						<a href="#" class="">signup</a>
+						<a href="signup.php" class="">signup</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Contact</a>
+						<a href="mailto:faisalhassan199@gmail.com" class="">Contact</a>
 					</li>
 				</ul>
 			</div>

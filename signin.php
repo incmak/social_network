@@ -1,16 +1,7 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="zxx">
-<!-- Head -->
-
 <head>
     <title>Signin</title>
-    <!-- Meta-Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="keywords" content="Key Login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
@@ -23,53 +14,38 @@
             window.scrollTo(0, 1);
         }
     </script>
-    <!-- //Meta-Tags -->
-    <!-- Index-Page-CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <!-- //Custom-Stylesheet-Links -->
-    <!--fonts -->
-    <!-- //fonts -->
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
-    <!-- //Font-Awesome-File-Links -->
-	
-	<!-- Google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Mukta:200,300,400,500,600,700,800" rel="stylesheet">
-	<!-- Google fonts -->
-
 </head>
-<!-- //Head -->
-<!-- Body -->
-
 <body>
-
 <section class="main">
 	<div class="layer">
-		
 		<div class="bottom-grid">
 			<div class="logo">
-				<h1> <a href="index.html"><span class="fa fa-key"></span> Colleger</a></h1>
+				<h1> <a href="index.html"><span class="fa fa-code"></span> Colleger</a></h1>
 			</div>
 			<div class="links">
 				<ul class="links-unordered-list">
 					<li class="active">
-						<a href="#" class="">Login</a>
+						<a class="" href="signin.php">Login</a>
 					</li>
 					<li class="">
-						<a href="#" class="">About Us</a>
+						<a href="mailto:faisalhassan199@gmail.com" class="">About Us</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Register</a>
+						<a href="signup.php" class="">Register</a>
 					</li>
 					<li class="">
-						<a href="#" class="">Contact</a>
+						<a href="mailto:faisalhassan199@gmail.com" class="">Contact</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="content-w3ls">
 			<div class="text-center icon">
-				<span class="fa "><img src="images/logo.png" height="100px" width="100px" alt="colleger"></span>
+				<span class="fa "><img src="images/logo.png" height="250px" width="250px" alt="colleger"></span>
 			</div>
 			<div class="content-bottom">
 				<form action="login.php" method="post">
@@ -106,7 +82,7 @@
 							<a href="signup.php" class="">Create Account</a>
 						</li>
 						<li class="">
-							<a href="#" class="text-right">Need Help?</a>
+							<a href="mailto:faisalhassan199@gmail.com" class="text-right">Need Help?</a>
 						</li>
 						<li class="clearfix"></li>
 					</ul>
@@ -114,29 +90,13 @@
 				</form>
 			</div>
 		</div>
-		<div class="bottom-grid1">
-			<div class="links">
-				<ul class="links-unordered-list">
-					<li class="">
-						<a href="#" class="">About Us</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Privacy Policy</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Terms of Use</a>
-					</li>
-				</ul>
+		
 			</div>
-			<div class="copyright">
-				<p>© 2019 Key. All rights reserved | Design by
-					<a href="http://w3layouts.com">W3layouts</a>
-				</p>
+			</p>
 			</div>
 		</div>
     </div>
 </section>
 
 </body>
-<!-- //Body -->
 </html>
