@@ -49,7 +49,7 @@
 		        </div>
 		        <div class="l-part">
 		          <form  action="" method="post">
-		            <div class="input-group">
+		            <div class="field-group">
 					    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
 					    <input type="text" class="form-control" placeholder="First Name" name="first_name" required="required">
 					</div><br>

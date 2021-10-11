@@ -1,9 +1,3 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="zxx">
 <!-- Head -->
@@ -48,7 +42,7 @@
 		
 		<div class="bottom-grid">
 			<div class="logo">
-				<h1> <a href="index.html"><span class="fa fa-key"></span> Colleger</a></h1>
+				<h1> <a href="index.html"><span class=""></span> Colleger</a></h1>
 			</div>
 			<div class="links">
 				<ul class="links-unordered-list">
@@ -69,24 +63,130 @@
 		</div>
 		<div class="content-w3ls">
 			<div class="text-center icon">
-				<span class="fa fa-html5"></span>
+				<span class=""></span>
 			</div>
 			<div class="content-bottom">
-				<form action="#" method="post">
+				<form action="" method="post">
 					<div class="field-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
 						<div class="wthree-field">
-							<input name="text1" id="text1" type="text" value="" placeholder="Username" required>
+							<input name="first_name"  type="text" placeholder="First Name" required>
+	                    </div>
 						</div>
-					</div>
+						
+						<div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="last_name"  type="text" placeholder="Last Name" required>
+	                    </div>
+						</div>
+						
+					
 					<div class="field-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
 						<div class="wthree-field">
-							<input name="password" id="myInput" type="Password" placeholder="Password">
+							<input  id="password" type="password" class="form-control" name="u_pass" placeholder="Password">
 						</div>
 					</div>
+					<div class="field-group">
+						<span class="fa fa-envelope" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input id="email" type="text" class="form-control" name="u_email" placeholder="Email" required="required">
+	                    </div>
+						</div>
+
+
+						<div class="field-group">
+						<span class="fa fa-flag"></span>
+						<div class="wthree-field">
+						
+			        <select class="wthree-field" name="u_country" placeholder="Select Country" required="required">
+						<option disabled>Select a Country</option>
+							<option>India</option>
+							<option>Israel</option>
+							<option>Iran</option>
+							<option>Iraq</option>
+							<option>Brazil</option>
+							<option>Brunai</option>
+							<option>Brunos Aries</option>
+							<option>China</option>
+							<option>Denmark</option>
+							<option>Egypt</option>
+							<option>France</option>
+							<option>Ghana</option>
+							<option>Hungary</option>
+							<option>Japan</option>
+							<option>Jakarta</option>
+							<option>Kaulalampur</option>
+							<option>Kuwait</option>
+							<option>KEnya</option>
+							<option>London</option>
+							<option>Morroco</option>
+							<option>Monaca</option>
+							<option>Malaysia</option>
+							<option>Maldives</option>
+							<option>Nigeria</option>
+							<option>NEw Zealand</option>
+							<option>North Korea</option>
+							<option>Norway</option>
+							<option>Oman</option>
+							<option>Pakistan</option>
+							<option>Palestine</option>
+							<option>Portugal</option>
+							<option>Qatar</option>
+							<option>Romania</option>
+							<option>Russia</option>
+							<option>Saint Lucia</option>
+							<option>Serbia</option>
+							<option>Singapore</option>
+							<option>South Africa</option>
+							<option>South Korea</option>
+							<option>Spain</option>
+							<option>Thailand</option>
+							<option>Ukraine</option>
+							<option>United States of America</option>
+							<option>United Kingdom</option>
+							<option>United Arab Emirates</option>
+							<option>Uruguay</option>
+							<option>Vietnam</option>
+							<option>Yemen</option>
+							<option>Zimbabwe</option>
+						</select>
+					</div>
+	                    </div>
+						<div class="field-group">
+						<span class="fa fa-mars" aria-hidden="true"></span>
+						<div class="wthree-field">
+						<select class="form-control input-md" name="u_gender" required="required">
+							<option disabled="disabled">Select Your Gender</option>
+							<option>Male</option>
+							<option>Female</option>
+							<option>Prefer Not To Say</option>
+							<option>Others</option>
+						</select>
+					</div><br>
+						</div>
+					<div class="field-group">
+					    <span class="fa fa-code" aria-hidden="true"></span>
+						<div class="wthree-field">
+						<select class="form-control input-md" name="u_branch" required="required">
+							<option disabled="disabled">Select Your Branch</option>
+							<option>Computer Science</option>
+							<option>Electronics and Communication</option>
+							<option>Mechanical</option>
+							<option>Electrical</option>
+							<option>Civil</option>
+						</select>
+					</div><br>
+	</div>
+	               <div class="field-group">
+					    <span class="fa fa-id-card" aria-hidden="true"></span>
+						
+						<input type="date" name="u_birthday" class="form-control input-md"  placeholder="Select Your Birthday" required="required" >
+					</div><br>
+
 					<div class="wthree-field">
-						<button type="submit" class="btn">Sign Up</button>
+						<button type="submit" id="signup" name="sign_up" class="btn">Sign Up</button>
 					</div>
 					<ul class="list-login">
 						<li class="switch-agileits">
@@ -114,20 +214,7 @@
 				</form>
 			</div>
 		</div>
-		<div class="bottom-grid1">
-			<div class="links">
-				<ul class="links-unordered-list">
-					<li class="">
-						<a href="#" class="">About Us</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Privacy Policy</a>
-					</li>
-					<li class="">
-						<a href="#" class="">Terms of Use</a>
-					</li>
-				</ul>
-			</div>
+		
 			
 				</p>
 			</div>
