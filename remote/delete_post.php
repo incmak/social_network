@@ -1,5 +1,5 @@
 <?php 
-$con = ("sql205.byetcluster.com","epiz_29916490","OEYueiwjym","epiz_29916490_social_network") or die("unsunccess");
+$con = mysqli_connect('sql205.byetcluster.com','epiz_29916490','OEYueiwjym','epiz_29916490_social_network') or die('unsunccess');
 
 if(isset($_GET['post_id'])){
 		
